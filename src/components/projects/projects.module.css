@@ -1,0 +1,247 @@
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 0 0 0 4px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 26px 0;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(225, 221, 221);
+  border-radius: 10px;
+}
+
+.main_container {
+  background-color: rgb(255, 255, 255);
+
+  padding: 0 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-height: 600px;
+  overflow-y: scroll;
+  border-radius: 40px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1), 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.project_container {
+  border-radius: 40px;
+  width: calc((100vw - 320px)/(1440 - 320) * (400 - 280) + 280px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1), 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.link {
+  text-decoration: none;
+}
+.links_container {
+  display:  flex;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.link_item {
+  color: rgba(13, 110, 253, 1);
+  font-size: 22px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  transition: color .3s ease-in ;
+}
+
+.link_item:hover {
+  color: palevioletred;
+} 
+
+.project_item {
+  width: calc((100vw - 320px)/(1440 - 320) * (400 - 280) + 280px);
+  height: 300px;
+  border-radius: 40px;
+  display: flex; 
+  flex-flow: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  /* filter: blur(2px); */
+}
+
+.project_name {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Roboto";
+  background-color: rgb(255, 255, 255);
+  line-height: 120%;
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  width: 240px;
+  letter-spacing: -0.6px;
+  color: rgb(0, 0, 0);
+}
+
+.project_name_nayzak {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.project_name_smt {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.project_item_stellar {
+  background-image: url(https://user-images.githubusercontent.com/61308457/168847872-31664c4c-c94c-4b35-9d98-3cdccf80c1b6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3300px;
+}
+
+.project_item_nayzak {
+  filter: contrast(1.2);
+  background-image: url(../../images/nayzak.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px;
+}
+
+.project_item_mesto {
+  background-image: url(https://user-images.githubusercontent.com/92729800/204303554-fd708625-c724-46f9-9045-261b69f63b27.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+
+.project_item_smt {
+  background-image: url(../../images/travel2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 6px 16px;
+  margin-bottom: 20px;
+  max-width: 180px;
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(0, 0, 0);
+  border-radius: 40px;
+}
+
+.wrapper_stellar:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+.stuffs_container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.6px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.title_nayzak {
+  color: white;
+}
+
+.title_mesto {
+  color: white;
+ }
+
+.title_smt {
+  color: black;
+}
+
+.description {
+  padding: 16px;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  
+  letter-spacing: -0.6px;
+  color: rgb(0, 0, 0);
+}
+
+.feature_title {
+  margin: 14px 0 0 16px;
+  font-family: "Roboto";
+  color: rgba(13, 110, 253, 1);
+  line-height: 120%;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.features_container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 16px 16px 35px;
+}
+
+.feature_item {
+  color: black;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+
+.feature_item::marker {
+  color: rgba(13, 110, 253, 1);
+
+}
+
+.wrapper_smt:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+}

@@ -1,0 +1,64 @@
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 0 0;
+}
+
+
+.icons_container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: -0.6px;
+  color: rgb(0, 0, 0);
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.icons_container_item {
+  width: calc((100vw - 320px)/(1440 - 320) * (500 - 230) + 260px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: -0.6px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.icons_container_item_telegram:hover {
+ color: rgba(13, 110, 253, 1)
+}
+
+.icons_container_item_git:hover {
+  color: #faa356
+ }
+
+.icons_container_item_phone:hover {
+color: rgb(69, 233, 44)
+}
+
+.router_icon {
+  width: 142px;
+  height: 75px;
+  /* object-fit: cover; */
+  color: rgb(255, 255, 0);
+}
